@@ -70,20 +70,3 @@ impl Bot {
         }
     }
 }
-
-fn main() {
-    let token = "<bot_token>"; // Replace it with bot token
-    let bot: Bot = Bot::new(token.to_owned());
-
-    let chat_id: i64 = 0; // Replace it with chat id
-    let parse_mode: Option<ParseMode> = Some(ParseMode::HTML);
-
-    // Your custom message
-    let text: String = "Hi, This is an example test message".to_owned();
-
-    let result: Result<Response, reqwest::Error> = bot.send_message(chat_id, text, parse_mode);
-    match result {
-        Ok(response) => println!("{:?}", response),
-        Err(error) => println!("{:?}", error),
-    }
-}
