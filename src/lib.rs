@@ -28,6 +28,7 @@ pub struct MessageResult {
     date: u64,
 }
 
+#[derive(Clone)]
 pub struct Bot {
     base_url: String,
 }
