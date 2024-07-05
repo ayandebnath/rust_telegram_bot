@@ -873,7 +873,7 @@ dependencies = [
 
 [[package]]
 name = "telegram_bot_api"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "reqwest",
  "serde",
